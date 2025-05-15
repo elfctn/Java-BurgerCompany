@@ -6,8 +6,8 @@ public class DeluxeBurger extends Hamburger {
 
     public DeluxeBurger() {
         super("Deluxe", "Double Sausage", 15.1, "WHITE");
-        this.cips = "Curvy";
-        this.drink = "Coke";
+        this.cips = "CURVY";
+        this.drink = "COKE";
 
         // Toplam 4.0 olacak şekilde eklemeler:
         super.addHamburgerAddition1("Chips", 2.0);
