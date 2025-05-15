@@ -1,15 +1,14 @@
 package org.example.models;
 
 public class DeluxeBurger extends Hamburger {
-    private String cips;
-    private String drink;
+    private final String cips;
+    private final String drink;
 
     public DeluxeBurger() {
-        super("Deluxe", "Double Sausage", 15.1, "WHITE");
+        super("Deluxe", "Double", 15.1, "Double Sandwich"); // ✅ MEAT ve BREADROLLTYPE düzeltildi
         this.cips = "CURVY";
         this.drink = "COKE";
 
-        // Toplam 4.0 olacak şekilde eklemeler:
         super.addHamburgerAddition1("Chips", 2.0);
         super.addHamburgerAddition2("Drink", 2.0);
     }

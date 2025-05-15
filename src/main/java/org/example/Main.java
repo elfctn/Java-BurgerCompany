@@ -4,6 +4,8 @@ import org.example.models.DeluxeBurger;
 import org.example.models.Hamburger;
 import org.example.models.HealthyBurger;
 
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
         // Hamburger örneği
@@ -17,7 +19,7 @@ public class Main {
         System.out.println("Addition1: Tomato");
         System.out.println("Addition2: Lettuce");
         System.out.println("Addition3: Cheese");
-        System.out.println("Price: " + String.format("%.2f", hamburger.itemizeHamburger()));
+        System.out.println("Price: " + String.format(Locale.ENGLISH, "%.2f", hamburger.itemizeHamburger()));
         System.out.println();
 
         // HealthyBurger örneği
@@ -29,15 +31,15 @@ public class Main {
         System.out.println("BreadRollType: " + healthyBurger.getBreadRollType());
         System.out.println("Addition1: Egg");
         System.out.println("HealthyAddition1: Lentils");
-        System.out.println("Price: " + String.format("%.2f", healthyBurger.itemizeHamburger()));
+        System.out.println("Price: " + String.format(Locale.ENGLISH, "%.2f", healthyBurger.itemizeHamburger()));
         System.out.println();
 
         // DeluxeBurger örneği
         DeluxeBurger db = new DeluxeBurger();
         db.addHamburgerAddition3("Should not do this", 50.53);
-        System.out.println("Name: " + db.getName() + " Burger");
+        System.out.println("Name: " + db.getName());
         System.out.println("Meat: " + db.getMeat());
         System.out.println("BreadRollType: " + db.getBreadRollType());
-        System.out.println("Price: " + String.format("%.2f", db.itemizeHamburger()));
+        System.out.println("Price: " + String.format(Locale.ENGLISH, "%.2f", db.itemizeHamburger()));
     }
 }
