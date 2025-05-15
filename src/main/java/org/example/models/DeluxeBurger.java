@@ -5,7 +5,7 @@ public class DeluxeBurger extends Hamburger {
     private final String drink;
 
     public DeluxeBurger() {
-        super("Deluxe", "Double", 15.1, "Double Sandwich"); // ✅ MEAT ve BREADROLLTYPE düzeltildi
+        super("Deluxe Burger", "Double", 15.1, "Double Sandwich"); // ✅ MEAT ve BREADROLLTYPE düzeltildi
         this.cips = "CURVY";
         this.drink = "COKE";
 

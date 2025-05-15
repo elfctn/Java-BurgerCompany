@@ -8,7 +8,7 @@ import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
-        // Hamburger örneği
+        // Hamburger
         Hamburger hamburger = new Hamburger("Basic", "Normal", 3.56, "Wrap");
         hamburger.addHamburgerAddition1("Tomato", 0.27);
         hamburger.addHamburgerAddition2("Lettuce", 0.75);
@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Price: " + String.format(Locale.ENGLISH, "%.2f", hamburger.itemizeHamburger()));
         System.out.println();
 
-        // HealthyBurger örneği
+        // HealthyBurger
         HealthyBurger healthyBurger = new HealthyBurger("Vegan Burger", 5.67, "Sandwich");
         healthyBurger.addHamburgerAddition1("Egg", 5.43);
         healthyBurger.addHealthyAddition1("Lentils", 3.41);
@@ -34,12 +34,12 @@ public class Main {
         System.out.println("Price: " + String.format(Locale.ENGLISH, "%.2f", healthyBurger.itemizeHamburger()));
         System.out.println();
 
-        // DeluxeBurger örneği
+        // DeluxeBurger
         DeluxeBurger db = new DeluxeBurger();
         db.addHamburgerAddition3("Should not do this", 50.53);
         System.out.println("Name: " + db.getName());
         System.out.println("Meat: " + db.getMeat());
         System.out.println("BreadRollType: " + db.getBreadRollType());
-        System.out.println("Price: " + String.format(Locale.ENGLISH, "%.2f", db.itemizeHamburger()));
+        System.out.println("Price: " + db.itemizeHamburger()); // ← bu satır değiştirildi
     }
 }
